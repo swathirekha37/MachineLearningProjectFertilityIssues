@@ -5,6 +5,8 @@ Finding the best fit model using different regression and classification techniq
 Performed accuracy_score testing on Linear regression, logistic regression,SVC,SVM,naive bayes, knn,kmeans,random forest and decision tress.
 After performing all the tests we got best accuracy for random forest classification method with 90%.
 Hence this model is used for predicting the futuristic data.
+
+
 Attribute Information:
 
 Season in which the analysis was performed. 1) winter, 2) spring, 3) Summer, 4) fall. (-1, -0.33, 0.33, 1)
