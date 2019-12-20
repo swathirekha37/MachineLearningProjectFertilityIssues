@@ -36,7 +36,7 @@ from sklearn.metrics import r2_score
 lr=LinearRegression()
 lr.fit(X_train,y_train)
 y_pred=lr.predict(X_test)
-r2_score(y_test,y_pred)   # 14%, this preoves Linear regression is not suitable.
+r2_score(y_test,y_pred)   # 14%, this proves Linear regression is not suitable.
 
 
 #below is svm checking r2-score
@@ -80,7 +80,7 @@ X_train=SC.fit_transform(X_train)
 X_test=SC.fit_transform(X_test)
 #y_test=SC.fit_transform(y_test)
 
-#checking with classification texhniques
+#checking with classification techniques
 from sklearn.linear_model import LogisticRegression
 logmodel = LogisticRegression()
 logmodel.fit(X_train,y_train)
@@ -102,8 +102,8 @@ r2_score(y_test,y_pred)   # -0.111, this proves that logistic regression not sui
 rfc=RandomForestClassifier(n_estimators=10,criterion='gini')
 rfc.fit(X,y)
 y_pred=rfc.predict(X)
-r2_score(y,y_pred)     #this model proves 44% suitable for future predictions
-y_pred=rfc.predict([[-1,0.67,0,0,1,0,0.6,0,0.5]])
+r2_score(y,y_pred)     #this model proves 90% suitable for future predictions
+y_pred=rfc.predict([[-1,0.67,0,0,1,0,0.6,0,0.5]])  # testing whether its works correctly by giving some data
 y_pred
 
 #Decision tree classifier
@@ -138,23 +138,6 @@ kmeans = KMeans(n_clusters = 5, init = 'k-means++', random_state = 42)
 kmeans.fit(X_train,y_train)
 y_pred=kmeans.predict(X_test)
 r2_score(y_test,y_pred)         #not at all suitable model
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
