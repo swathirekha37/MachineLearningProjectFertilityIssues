@@ -6,6 +6,9 @@ Performed accuracy_score testing on Linear regression, logistic regression,SVC,S
 After performing all the tests we got best accuracy for random forest classification method with 90%.
 Hence this model is used for predicting the futuristic data.
 
+Dataset has been taken from the following link:
+https://archive.ics.uci.edu/ml/machine-learning-databases/00244/
+Here download fertility_diagnosis.text
 
 Attribute Information:
 
